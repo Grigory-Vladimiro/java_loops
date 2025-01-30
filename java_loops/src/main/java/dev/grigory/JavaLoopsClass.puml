@@ -1,0 +1,51 @@
+@startuml JavaLoopsClass
+
+class JavaLoopsClass {
+    // Upper Section: Class Name (Already defined)
+
+    // Middle Section: Attributes (None)
+
+    // Bottom Section: Methods
+    + generateMultiplicationTable(number: int): int[]
+    + main(args: String[]): void
+}
+
+class MultiplicationTableFormatter {
+    // Upper Section: Class Name (Already defined)
+
+    // Middle Section: Attributes (None)
+
+    // Bottom Section: Methods
+    + formatTable(number: int, table: int[]): String
+}
+
+class Scanner {
+    // Upper Section: Class Name (Already defined)
+
+    // Middle Section: Attributes (None)
+
+    // Bottom Section: Methods
+    + nextInt(): int
+    + close(): void
+}
+
+class JavaLoopsClassTest {
+    // Upper Section: Class Name (Already defined)
+
+    // Middle Section: Attributes (None)
+
+    // Bottom Section: Methods
+    + testMultiplicationTableForPositiveNumber(): void
+    + testMultiplicationTableForZero(): void
+    + testMultiplicationTableForNegativeNumber(): void
+    + testMultiplicationTableForLargeNumber(): void
+    + testMainMethodWithValidInput(): void
+    + testMainMethodWithZeroInput(): void
+}
+
+// Define relationships between classes
+JavaLoopsClass ..> Scanner : uses
+JavaLoopsClass --> MultiplicationTableFormatter : calls
+JavaLoopsClassTest --> JavaLoopsClass : tests
+
+@enduml
