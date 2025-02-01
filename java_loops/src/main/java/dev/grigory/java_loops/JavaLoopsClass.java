@@ -1,17 +1,14 @@
 package dev.grigory.java_loops;
 
 import java.util.Scanner;
-
 public class JavaLoopsClass {
 
-    public int[][] generateMultiplicationTable(int size) {
-        int[][] table = new int[size][size];
-        for (int i = 0; i < size; i++) {
-            for (int j =0; j < size; j++) {
-                table [i][j] = (i + 1) * (j +1);
+    public int[] generateMultiplicationTable(int number) {
+            int[] result = new int[10];
+            for (int i = 0; i < 10; i++) {
+                result[i] = number * (i + 1);
             }
-        }
-        return table;
+        return result;
     }
 
     public static void main(String[] args) {
@@ -21,7 +18,7 @@ public class JavaLoopsClass {
         scanner.close();
 
         JavaLoopsClass loops = new JavaLoopsClass();
-        int[][] table = loops.generateMultiplicationTable(number);
+        int[] table = loops.generateMultiplicationTable(number);
 
         
         for (int i = 0; i < table.length; i++) {
