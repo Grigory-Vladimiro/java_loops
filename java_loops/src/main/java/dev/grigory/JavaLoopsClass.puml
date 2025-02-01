@@ -1,4 +1,4 @@
-@startuml
+@startuml JavaLoopsClass
 class JavaLoopsClass {
     - scanner: Scanner
     - number: int
