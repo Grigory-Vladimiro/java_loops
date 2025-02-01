@@ -14,8 +14,13 @@ for (int i = 0; i < 10; i++) {
 }
         assertArrayEquals(expected, loops.generateMultiplicationTable(number));
     }
+    @Test
+    void testMultiplicationTableLength() {
+        JavaLoopsClass loops = new JavaLoopsClass();
+        int[] table = loops.generateMultiplicationTable(7);
+        assertEquals(10, table.length, "The table should contain 10 lines.");
 }
-    
+}
 
         
 
