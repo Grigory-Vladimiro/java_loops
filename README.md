@@ -18,6 +18,10 @@ Output:
 5 x 10 = 50
 
 Requisito:
-Se debe testear. Mínimo un test del método que retorna el array
+Se debe testear usando TDD. Mínimo un test del método que retorna el array (coverage mínimo 70%)
+Cuidado con los commits.
+
 Entregable:
-Repositorio de Github
+Repositorio de Github ( enlace)
+Diagrama de clase
+Captura de pantalla de la sección "Testing" de VSC donde se aprecia la cobertura de los tests.
