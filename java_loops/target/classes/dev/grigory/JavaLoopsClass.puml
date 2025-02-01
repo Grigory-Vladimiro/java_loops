@@ -1,10 +1,15 @@
-@startuml java_loops_class_diagram
+@startuml
 class JavaLoopsClass {
+    - scanner: Scanner
+    - number: int
+    - table: int[]
+    --
     + generateMultiplicationTable(number: int): int[]
     + main(args: String[]): void
 }
 
 class JavaLoopsClassTest {
+    --
     + testMultiplicationTableLength(): void
     + testMultiplicationTableFullCheck(): void
     + testMainMethod(): void
